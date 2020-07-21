@@ -26,13 +26,15 @@
                             <h3 style="margin-top: 10px;" class="center-align"> Register here !!</h3>
                             <div class="form center-align">
                                 <!--creating form-->
-                                <from action="Register" method="post">
+                                <form action="Register" method="post">
                                     <input type="text" name="user_name" placeholder="Enetr your name">
                                     <input type="password" name="user_password" placeholder="Enetr your password">
                                     <input type="email" name="user_email" placeholder="Enetr your email">
-                                    <button type="submit" class="btn red ">Submit</button>
                                     
-                                </from>
+                                    <button type="submit" class="btn red ">Submit</button>
+                                    <button type="reset" class="btn red">Reset</button>
+                                    
+                                </form>
                                 
                             </div>
                             <div class="loader center-align" style="margin-top: 10px; display: none;">
