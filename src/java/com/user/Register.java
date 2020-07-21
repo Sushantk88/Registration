@@ -36,22 +36,18 @@ public class Register extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet Register</title>");            
-            out.println("</head>");
-            out.println("<body>");
+            
             
             String name = request.getParameter("user_name");
             String password = request.getParameter("user_password");
             String email = request.getParameter("user_email");
             
-            out.println(name);
+           /* out.println(name);
             out.println(password);
-            out.println(email);
+            out.println(email);*/
             // Creating JDBC connction......
             try{
+                Thread.sleep(3000);
                 Class.forName("com.mysql.jdbc.Driver");
                 Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/youtube","root","root");
                 
@@ -63,22 +59,15 @@ public class Register extends HttpServlet {
                 
                 psmt.executeUpdate();
                 
-                out.println("<h1>Inserted Successfully</h1>");
+                out.println("Done");
                 
             }
             catch(Exception e)
             {
                 e.printStackTrace();
-                out.println("<h1>Error</h1>");
+                out.println("Error");
             }
-            
-            
             //Writing Queries......
-            
-            
-            
-            out.println("</body>");
-            out.println("</html>");
         }
     }
 
