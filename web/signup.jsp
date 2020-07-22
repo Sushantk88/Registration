@@ -30,6 +30,15 @@
                                     <input type="text" name="user_name" placeholder="Enetr your name">
                                     <input type="password" name="user_password" placeholder="Enetr your password">
                                     <input type="email" name="user_email" placeholder="Enetr your email">
+                                     <div class="file-field input-field">
+                                         <div class="btn red">
+                                             <span>File</span>
+                                             <input nsme="image" type="file">
+                                         </div>
+                                         <div class="file-path-wrapper">
+                                             <input class="file-path validate" type="text">
+                                         </div>
+                                     </div>
                                     
                                     <button type="submit" class="btn red ">Submit</button>
                                     <button type="reset" class="btn red">Reset</button>
@@ -73,9 +82,9 @@
         <script>
             $(document).ready(function()
             {
-                console.log("page ready.....")
+                console.log("page ready.....");
                             
-            })
+            });
         </script>
     </body>
 </html>
