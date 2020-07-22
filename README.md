@@ -7,3 +7,5 @@ Created JDBC connection and Successfully inserted data(user name, password and e
 Successfully implemented ajax using jquery.
 The main purpose of using ajax is instead of reloading whole web page when submiting form data only one request has to be sent to servlet and it does processing at backend and gives us result as successful or not.
 Done with final validations too.
+One extra column created in table viz image.
+Accepting image type input from user and storing image name in table and uploading image to the project.
